@@ -25,7 +25,7 @@ li.navbar {
     display:block;
     padding-right:20;
     padding-left:20;
-    height:40;
+    height:37;
     transition: 0.3s ease-out;
     padding-top: 13;
 }
@@ -42,7 +42,7 @@ li.active {
     display:block;
     padding-right:20;
     padding-left:20;
-    height:40;
+    height:37;
     transition: 0.3s ease-out;
     padding-top: 13;
 }
