@@ -7,7 +7,7 @@ ul.navbar {
     background-color:#222021;
     padding:0;
     margin:0;
-    height:35;
+    height:44;
     vertical-align: middle;
 }
 div.navbar {
@@ -52,6 +52,7 @@ a.navbar {
     font-size:18;
     color:white;
     display:block;
+    height:60;
     
 }
 .navbutton {
@@ -65,22 +66,94 @@ div.body {
 }
 div.one {
     background-color:rgb(64, 64, 70);
-    padding:0;
+    padding:20;
     margin:0;
     color:white;
-    font-family:avenir;
     display:grid;
 }
+div.two {
+    background-color:#008db0;
+    padding:20;
+    margin:0;
+    color:white;
+    text-align: center;
+}
+div.three {
+    background-color:rgb(64, 64, 70);
+    padding:20;
+    margin:0;
+    color:white;
+    text-align: center;
+}
+div.footer {
+    background-color: #222021;
+    margin:0;
+    padding:20;
+    color: white;
+    display:inline-block;
+    width: 100%;
+    text-align:center;
+}
+div.photos {
+    background-color:rgb(64, 64, 70);
+    color: white;
+    padding:20;
+    margin:0;
+}
+img.photography {
+    width:400;
+    height:400;
+    margin: 10;
+    object-fit:cover;
+}
+h2 {
+    font-weight: lighter;
+    font-style: italic;
+    font-family:callingcode;
+}
+h2.two {
+    font-style:normal;
+    margin: 20;
+    margin-bottom: 40;
+}
+h1 {
+    font-family: rockfordsans;
+}
 h1.one {
-    font-size: 30;
+    font-size: 100;
     padding-left:0;
     grid-column:auto;
     vertical-align: middle;
+}
+h1.two {
+    font-size: 100;
+    padding-left:0;
+    padding-bottom:0;
+    margin:0;
+}
+a.readmore {
+    font-family: lemonmilk;
+    font-size: 27;
+    text-align: center;
+    padding: 5;
+    border-style: solid;
+    border-color: white;
+    transition: 0.2s ease-out;
+    color: white;
+    text-decoration: none;
+}
+a.readmore:hover {
+    background-color: darkorange;
+    border-color:darkorange;
+    transition: 0.2s ease-in;
 }
 img.one {
     grid-column:right;
     padding:16;
     padding-bottom:0;
+    width: 400;
+    height:400;
+    object-fit: cover;
 }
 @media only screen and (max-width: 1000px) {
     body {
@@ -134,15 +207,31 @@ img.one {
 }
 @font-face {
     font-family: 'lemon_milkbold';
-    src: url('lemonmilk/lemonmilk-bold-webfont.woff2') format('woff2'),
-         url('lemonmilk/lemonmilk-bold-webfont.woff') format('woff');
+    src: url('fonts/lemonmilk-bold-webfont.woff2') format('woff2'),
+         url('fonts/lemonmilk-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'lemonmilk';
-    src: url('lemonmilk/LEMONMILK-Light.otf') format('opentype');
+    src: url('fonts/LEMONMILK-Light.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'callingcode';
+    src: url('fonts/callingcode-regular-webfont.woff2') format('woff2'),
+         url('fonts/callingcode-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'rockfordsans';
+    src: url('fonts/rockfordsans-light-webfont.woff2') format('woff2'),
+         url('fonts/rockfordsans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
