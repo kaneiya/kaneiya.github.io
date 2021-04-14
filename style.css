@@ -131,7 +131,7 @@ h1.two {
     padding-bottom:0;
     margin:0;
 }
-a.readmore {
+a.button {
     font-family: lemonmilk;
     font-size: 27;
     text-align: center;
@@ -142,7 +142,7 @@ a.readmore {
     color: white;
     text-decoration: none;
 }
-a.readmore:hover {
+a.button:hover {
     background-color: darkorange;
     border-color:darkorange;
     transition: 0.2s ease-in;
@@ -216,6 +216,9 @@ img.one {
     }
     img.photography {
         width:90%
+    }
+    a.button {
+        font-size: 16;
     }
 }
 @font-face {
