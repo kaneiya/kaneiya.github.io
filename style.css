@@ -62,7 +62,8 @@ a.navbar {
 }
 div.body {
     padding:0;
-    width:auto;
+    width:100%;
+    margin: 0;
 }
 div.one {
     background-color:rgb(64, 64, 70);
@@ -118,15 +119,14 @@ h2.two {
 }
 h1 {
     font-family: rockfordsans;
+    font-size: 100;
 }
 h1.one {
-    font-size: 100;
     padding-left:0;
     grid-column:auto;
     vertical-align: middle;
 }
 h1.two {
-    font-size: 100;
     padding-left:0;
     padding-bottom:0;
     margin:0;
@@ -185,7 +185,7 @@ img.one {
         width:auto;
         grid-area:top;
         grid-area: right;
-        margin:10;
+        margin:0;
         word-wrap: break-word;
         overflow: inherit;
     }
@@ -203,6 +203,19 @@ img.one {
     .navbutton:hover {
         background-color:#009dc4;
         transition: 0.2s ease-in;
+    }
+    h1 {
+        font-size: 30;
+    }
+    h2 {
+        font-size: 20;
+    }
+    img.one {
+        width:200;
+        height:200;
+    }
+    img.photography {
+        width:90%
     }
 }
 @font-face {
