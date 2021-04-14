@@ -101,11 +101,25 @@ div.photos {
     padding:20;
     margin:0;
 }
+div.project {
+    background-color:#008db0;
+    padding:20;
+    margin:0;
+    color:white;
+}
+img.project {
+    grid-column: right;
+    width: 300;
+    right: 0;
+    margin-right: 5%;
+    object-fit: cover;
+    
+}
 img.photography {
     width:400;
     height:400;
     margin: 10;
-    object-fit:cover;
+    object-fit:fill;
 }
 h2 {
     font-weight: lighter;
@@ -130,6 +144,9 @@ h1.two {
     padding-left:0;
     padding-bottom:0;
     margin:0;
+}
+p.project {
+    font-family: rockfordsans;
 }
 a.button {
     font-family: lemonmilk;
@@ -219,6 +236,10 @@ img.one {
     }
     a.button {
         font-size: 16;
+    }
+    img.project {
+        width:40%;
+        object-fit: contain;
     }
 }
 @font-face {
