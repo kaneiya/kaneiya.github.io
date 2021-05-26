@@ -1,2 +1,0 @@
-# kingkaneiyaneiya.github.io
-Jgshjdbksjdf
