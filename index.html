@@ -5,94 +5,13 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
-        <script>
-            function nav() {
-               if(document.getElementById('navbar').style.width=='200px'){
-                   document.getElementById('navbar').style.visibility = 'hidden';
-                    document.getElementById('navbar').style.width = 0;
-                   document.getElementById('navbtn').style.paddingTop = "40";
-                   document.getElementById('navbtn').style.height = "40";
-                   document.getElementById('navbtn').style.backgroundColor = "transparent";
-                   document.getElementById('navbtn').style.textAlign = "center";
-                   document.getElementById('navbtn').style.paddingLeft = "0";
-                   document.getElementById('navbtn').innerHTML = "Menu";
-               } else {
-                   document.getElementById('navbar').style.visibility = 'visible';
-                    document.getElementById('navbar').style.width = '200px';
-                   document.getElementById('navbtn').style.paddingTop = "50";
-                   document.getElementById('navbtn').style.height = "80";
-                   document.getElementById('navbtn').style.verticalAlign = "bottom";
-                   document.getElementById('navbtn').style.backgroundColor = "#242632";
-                   document.getElementById('navbtn').style.textAlign = "left";
-                   document.getElementById('navbtn').style.paddingLeft = "20";
-                   document.getElementById('navbtn').innerHTML = "Close";
-               }
-            }
-        </script>
     </head>
-    <body>
-        <button type="button" onclick="nav()" id="navbtn">Menu</button>
-        <div id="navbar">
-            <div id="left">
-                <a href="#" id="navbar-btn" style="color: #f4c168">[logo]</a>
-            </div>
-            <div id="right">
-                <a href="index.html" id="navbar-btn-active">Home</a>
-                <a href="#" id="navbar-btn">Photos</a>
-                <a href="#" id="navbar-btn">Code</a>
-            </div>
+    <body style="padding: 20px; display: flex; justify-content: space-around; align-items: center; flex-direction: column;">
+        <div>
+            <h1 id="name" style="text-align: center;">Hello! This page is currently under development.</h1>
         </div>
-        <div id="body">
-            <div id="intro">
-                <div class="left">
-                    <h1 id="name">Kaneiya</h1>
-                    <h2 id="line">—</h2>
-                    <div class="social">
-                        <a id="soc1" href="https://www.instagram.com/kaneiyad/">Ú</a>
-                        <a id="soc2" href="#">â</a>
-                        <a id="soc3" href="#">Ö</a>
-                    </div>
-                </div>
-                <div class="right">
-                    <h1 id="subtitle">About</h1>
-                    <h2 id="caption">Lorem ipsum dolor sit amet, ludus insolens volutpat ut vis, no assum choro populo vim. Ut nam sale commodo intellegat, cum ea deleniti assueverit. Officiis voluptaria incorrupte ut pro, est no nostrum suscipit elaboraret. Pro epicurei atomorum voluptatibus eu. Moderatius appellantur eum ut, pro at doming tractatos. Esse etiam sed cu. Magna decore persecuti no nec. Ubique persius no sea, no inimicus cotidieque eos.</h2>
-                </div>
-            </div>
-            <div id="part2">
-                <div class="section">
-                    <h1 id="subtitle2" >Photography</h1>
-                    <h2 id="caption">Lorem ipsum dolor sit amet, ludus insolens volutpat ut vis, no assum choro populo vim. Ut nam sale commodo intellegat, cum ea deleniti assueverit. Officiis voluptaria incorrupte ut pro, est no nostrum suscipit elaboraret. Pro epicurei atomorum voluptatibus eu. Moderatius appellantur eum ut, pro at doming tractatos. Esse etiam sed cu. Magna decore persecuti no nec. Ubique persius no sea, no inimicus cotidieque eos.</h2>
-                    <a class="button" href="#">SEE MORE</a>
-                </div>
-                <div class="section">
-                    <h1 id="subtitle2" >Coding</h1>
-                    <h2 id="caption">Lorem ipsum dolor sit amet, ludus insolens volutpat ut vis, no assum choro populo vim. Ut nam sale commodo intellegat, cum ea deleniti assueverit. Officiis voluptaria incorrupte ut pro, est no nostrum suscipit elaboraret. Pro epicurei atomorum voluptatibus eu. Moderatius appellantur eum ut, pro at doming tractatos. Esse etiam sed cu. Magna decore persecuti no nec. Ubique persius no sea, no inimicus cotidieque eos.</h2>
-                    <a class="button" href="#">SEE MORE</a>
-                </div>
-                <div class="section">
-                    <h1 id="subtitle2" >sdkjhgkjsfsldfj</h1>
-                    <h2 id="caption">Lorem ipsum dolor sit amet, ludus insolens volutpat ut vis, no assum choro populo vim. Ut nam sale commodo intellegat, cum ea deleniti assueverit. Officiis voluptaria incorrupte ut pro, est no nostrum suscipit elaboraret. Pro epicurei atomorum voluptatibus eu. Moderatius appellantur eum ut, pro at doming tractatos. Esse etiam sed cu. Magna decore persecuti no nec. Ubique persius no sea, no inimicus cotidieque eos.</h2>
-                    <a class="button" href="#">SEE MORE</a>
-                </div>
-            </div>
-            <div id="techspot">
-                <div style="padding: 30px;">
-                    <h1 id="subtitle" style="text-align: center;">Tech Spotlight</h1>
-                </div>
-                <div id="tech">
-                    <div>
-                        <img id="techimg" style="" src="https://cdn.mos.cms.futurecdn.net/gPvyaz76tASn87RCGuSdDc.jpg" />
-                    </div>
-                    <div class="techsec" >
-                        <h1 id="subtitle2" style="text-align: left; margin-bottom: 10px;" >MacBook Air (M1)</h1>
-                        <h2 id="line" style="margin-top: -50; margin-bottom: -20; margin-left: -7;">—</h2>
-                        <h2 id="caption" style="text-align: left;" >Lorem ipsum dolor sit amet, ludus insolens volutpat ut vis, no assum choro populo vim. Ut nam sale commodo intellegat, cum ea deleniti assueverit.</h2>
-                        <h2 id="caption" style="text-align: left;" >Lorem ipsum dolor sit amet, ludus insolens volutpat ut vis, no assum choro populo vim. Ut nam sale commodo intellegat, cum ea deleniti assueverit.</h2>
-                        <h2 id="caption" style="text-align: left; font-style: italic;" >Image from Future.</h2>
-                    <a class="button" href="#" style="align-self: center;">LEARN MORE</a>
-                    </div>
-                </div>
-            </div>
+        <div style="align-items: center; display: flex; padding: 50px; justify-content: center;">
+            <a class="button" href="page.html">VIEW PAGE ANYWAY</a>
         </div>
     </body>
 </html>
