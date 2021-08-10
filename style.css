@@ -92,6 +92,14 @@ body {
     color: white;
     transition: 0.25s ease-in;
 }
+#navimg{
+    background-image: url("logo.png") no-repeat;
+    width: 80;
+    display: inline-block;
+}
+#navimg:hover{
+    background-image: url("logo-hover.png") no-repeat;
+}
 
 #body {
     padding: 0;
