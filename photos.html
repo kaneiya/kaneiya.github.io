@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="photostyle.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript">
             function nav() {
                if(document.getElementById('navbar').style.width=='200px'){
@@ -30,10 +29,6 @@
                    document.getElementById('navbtn').innerHTML = "Close";
                }
             }
-            $(document).ready(function() {
-                $('#body').show();
-                $('#loader').hide();
-            });
         </script>
     </head>
     <body>
@@ -48,8 +43,7 @@
                 <a href="#" id="navbar-btn">Code</a>
             </div>
         </div>
-        <h1 id="loader">LOADING</h1>
-        <div id="body" style="display: none;">
+        <div id="body">
             <div id="intro">
                 <div class="left">
                     <h1 id="name">Photography</h1>
