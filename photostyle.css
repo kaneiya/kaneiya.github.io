@@ -6,6 +6,8 @@
     width: 100%;
     vertical-align: middle;
     margin-top: 8;
+    /*background-image: url("https://flevix.com/wp-content/uploads/2019/07/Spinner-Preloader.gif");*/
+    background-size: contain;
 }
 .overlay {
     position: absolute;
