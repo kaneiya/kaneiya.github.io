@@ -94,7 +94,7 @@ body {
 }
 #navimg{
     background-image: url("logo.png") no-repeat;
-    width: 80;
+    width: 60;
     display: inline-block;
 }
 #navimg:hover{

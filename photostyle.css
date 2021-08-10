@@ -1,0 +1,88 @@
+#grid {
+    margin: 0 8% 32 8%;
+}
+.element {
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 8;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease-in;
+    background-color: #f4c168;
+}
+.element:hover .overlay {
+    opacity: 1;
+}
+.image {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+.cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text{
+    color: white;
+    font-family: 'Sen', sans-serif;
+    font-size: 40;
+}
+.subtext{
+    color: white;
+    font-family: 'Sen', sans-serif;
+    font-size: 20;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4;
+}
+.column {
+    flex: 23%;
+    max-width: 25%;
+    padding: 0 4;
+}
+
+@media screen and (max-width: 1400px) {
+    .text {
+        font-size: 20;
+    }
+    .subtext {
+        font-size: 10;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .column {
+        flex: 48%;
+        max-width: 50%;
+    }
+    .text {
+        font-size: 30;
+    }
+    .subtext {
+        font-size: 14;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 99%;
+    max-width: 100%;
+  }
+}

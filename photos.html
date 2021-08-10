@@ -3,6 +3,7 @@
     <head>
         <title>Kaneiya - Photos</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="photostyle.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
         <script>
@@ -34,11 +35,11 @@
         <button type="button" onclick="nav()" id="navbtn">Menu</button>
         <div id="navbar">
             <div id="left">
-                <a href="#" id="navbar-btn" style="color: #f4c168"><img src="logo.png" id="navimg"style="width:80;"/></a>
+                <a href="#" id="navbar-btn" style="color: #f4c168"><img src="logo.png" id="navimg" /></a>
             </div>
             <div id="right">
-                <a href="index.html" id="navbar-btn">Home</a>
-                <a href="#" id="navbar-btn-active">Photos</a>
+                <a href="page.html" id="navbar-btn">Home</a>
+                <a href="photos.html" id="navbar-btn-active">Photos</a>
                 <a href="#" id="navbar-btn">Code</a>
             </div>
         </div>
@@ -47,49 +48,302 @@
                 <div class="left">
                     <h1 id="name">Photography</h1>
                     <h2 id="line">—</h2>
-                    <div class="social">
+                    <!--<div class="social">
                         <a id="soc1" href="https://www.instagram.com/kaneiyad/">Ú</a>
                         <a id="soc2" href="#">â</a>
                         <a id="soc3" href="#">Ö</a>
-                    </div>
-                </div>
-                <div class="right">
-                    <h1 id="subtitle">About</h1>
-                    <h2 id="caption">Lorem ipsum dolor sit amet, ludus insolens volutpat ut vis, no assum choro populo vim. Ut nam sale commodo intellegat, cum ea deleniti assueverit. Officiis voluptaria incorrupte ut pro, est no nostrum suscipit elaboraret. Pro epicurei atomorum voluptatibus eu. Moderatius appellantur eum ut, pro at doming tractatos. Esse etiam sed cu. Magna decore persecuti no nec. Ubique persius no sea, no inimicus cotidieque eos.</h2>
+                    </div>-->
                 </div>
             </div>
-            <div id="part2">
-                <div class="section">
-                    <h1 id="subtitle2" >Photography</h1>
-                    <h2 id="caption">Lorem ipsum dolor sit amet, ludus insolens volutpat ut vis, no assum choro populo vim. Ut nam sale commodo intellegat, cum ea deleniti assueverit. Officiis voluptaria incorrupte ut pro, est no nostrum suscipit elaboraret. Pro epicurei atomorum voluptatibus eu. Moderatius appellantur eum ut, pro at doming tractatos. Esse etiam sed cu. Magna decore persecuti no nec. Ubique persius no sea, no inimicus cotidieque eos.</h2>
-                    <a class="button" href="#">SEE MORE</a>
-                </div>
-                <div class="section">
-                    <h1 id="subtitle2" >Coding</h1>
-                    <h2 id="caption">Lorem ipsum dolor sit amet, ludus insolens volutpat ut vis, no assum choro populo vim. Ut nam sale commodo intellegat, cum ea deleniti assueverit. Officiis voluptaria incorrupte ut pro, est no nostrum suscipit elaboraret. Pro epicurei atomorum voluptatibus eu. Moderatius appellantur eum ut, pro at doming tractatos. Esse etiam sed cu. Magna decore persecuti no nec. Ubique persius no sea, no inimicus cotidieque eos.</h2>
-                    <a class="button" href="#">SEE MORE</a>
-                </div>
-                <div class="section">
-                    <h1 id="subtitle2" >sdkjhgkjsfsldfj</h1>
-                    <h2 id="caption">Lorem ipsum dolor sit amet, ludus insolens volutpat ut vis, no assum choro populo vim. Ut nam sale commodo intellegat, cum ea deleniti assueverit. Officiis voluptaria incorrupte ut pro, est no nostrum suscipit elaboraret. Pro epicurei atomorum voluptatibus eu. Moderatius appellantur eum ut, pro at doming tractatos. Esse etiam sed cu. Magna decore persecuti no nec. Ubique persius no sea, no inimicus cotidieque eos.</h2>
-                    <a class="button" href="#">SEE MORE</a>
-                </div>
-            </div>
-            <div id="techspot">
-                <div style="padding: 30px;">
-                    <h1 id="subtitle" style="text-align: center;">Tech Spotlight</h1>
-                </div>
-                <div id="tech">
-                    <div>
-                        <img id="techimg" style="" src="https://cdn.mos.cms.futurecdn.net/gPvyaz76tASn87RCGuSdDc.jpg" />
+            <div id="grid">
+                <div class="row">
+                    <div class="column">
+                        <div class="element">
+                            <img src="images/photo1.jpeg" class="image" />
+                            <a href="images/photo1.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Freya's Tears of Gold</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">May 11, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo2.jpeg" class="image" />
+                            <a href="images/photo2.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Simple Beauty</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">May 5, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo3.jpeg" class="image" />
+                            <a href="images/photo3.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Umbrella</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">March 10, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo4.jpeg" class="image" />
+                            <a href="images/photo4.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Blue</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">January 27, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo5.jpeg" class="image" />
+                            <a href="images/photo5.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Beyond the Glass</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">April 1, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo24.jpeg" class="image" />
+                            <a href="images/photo24.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">The City</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">January 22, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo25.jpeg" class="image" />
+                            <a href="images/photo25.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Clouds</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">December 26, 2020</div>
+                                </div>
+                            </div></a>
+                        </div>
                     </div>
-                    <div class="techsec" >
-                        <h1 id="subtitle2" style="text-align: left; margin-bottom: 10px;" >MacBook Air (M1)</h1>
-                        <h2 id="line" style="margin-top: -50; margin-bottom: -20; margin-left: -7;">—</h2>
-                        <h2 id="caption" style="text-align: left;" >Lorem ipsum dolor sit amet, ludus insolens volutpat ut vis, no assum choro populo vim. Ut nam sale commodo intellegat, cum ea deleniti assueverit.</h2>
-                        <h2 id="caption" style="text-align: left;" >Lorem ipsum dolor sit amet, ludus insolens volutpat ut vis, no assum choro populo vim. Ut nam sale commodo intellegat, cum ea deleniti assueverit.</h2>
-                        <h2 id="caption" style="text-align: left; font-style: italic;" >Image from Future.</h2>
-                    <a class="button" href="#" style="align-self: center;">LEARN MORE</a>
+                    <div class="column">
+                        <div class="element">
+                            <img src="images/photo6.jpeg" class="image" />
+                            <a href="images/photo6.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Game</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">May 10, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo7.jpeg" class="image" />
+                            <a href="images/photo7.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Candlelight</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">April 15, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo8.jpeg" class="image" />
+                            <a href="images/photo8.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Reflection</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">March 8, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo9.jpeg" class="image" />
+                            <a href="images/photo9.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Untitled</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">February 3, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo10.jpeg" class="image" />
+                            <a href="images/photo10.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Silhouette I</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">January 18, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo23.jpeg" class="image" />
+                            <a href="images/photo23.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Green Eyes</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">May 18, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo26.jpeg" class="image" />
+                            <a href="images/photo26.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Boardwalk</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">July 24, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="element">
+                            <img src="images/photo11.jpeg" class="image" />
+                            <a href="images/photo11.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Silhouette II</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">March 16, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo12.jpeg" class="image" />
+                            <a href="images/photo12.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Silhouette III</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">January 18, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo13.jpeg" class="image" />
+                            <a href="images/photo13.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Hiding</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">April 12, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo14.jpeg" class="image" />
+                            <a href="images/photo14.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Untitled</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">April 11, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo15.jpeg" class="image" />
+                            <a href="images/photo15.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Untitled</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">April 11, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo22.jpeg" class="image" />
+                            <a href="images/photo22.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Moonstones</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">July 24, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo27.jpeg" class="image" />
+                            <a href="images/photo27.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Cambria</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">July 24, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="element">
+                            <img src="images/photo16.jpeg" class="image" />
+                            <a href="images/photo16.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Satisfies</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">May 12, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo17.jpeg" class="image" />
+                            <a href="images/photo17.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Wake Up</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">May 19, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo18.jpeg" class="image" />
+                            <a href="images/photo18.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Untitled</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">April 16, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo19.jpeg" class="image" />
+                            <a href="images/photo19.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Reading</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">April 26, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo20.jpeg" class="image" />
+                            <a href="images/photo20.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Yawn</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">May 19, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo21.jpeg" class="image" />
+                            <a href="images/photo21.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Untitled</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">July 12, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
+                        <div class="element">
+                            <img src="images/photo29.jpeg" class="image" />
+                            <a href="images/photo29.jpeg"><div class="overlay">
+                                <div class="cont">
+                                    <div class="text">Colors</div>
+                                    <h2 id="line" style="color: white; font-size: 64; padding-top: 16;">—</h2>
+                                    <div class="subtext">March 9, 2021</div>
+                                </div>
+                            </div></a>
+                        </div>
                     </div>
                 </div>
             </div>
