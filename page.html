@@ -3,6 +3,7 @@
     <head>
         <title>Kaneiya</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="discordcard.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="favicon.png">
@@ -29,6 +30,23 @@
                    document.getElementById('navbtn').innerHTML = "Close";
                }
             }
+            
+            function popup() {
+                document.getElementById('popup').style.display = 'flex';
+            }
+            function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+            }
+            
+            function copyUserId() {
+                var copyText = document.getElementById("userid");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999)
+                document.execCommand("copy");
+                document.getElementById("copy").innerHTML = 'Copied!';
+                document.getElementById("copy").style.backgroundColor = '#57F287';
+                setTimeout(function() {document.getElementById("copy").innerHTML = 'Copy'; document.getElementById("copy").style.backgroundColor = '#5865F2';}, 5000);
+            }
         </script>
     </head>
     <body>
@@ -50,7 +68,7 @@
                     <h2 id="line">—</h2>
                     <div class="social">
                         <a id="soc1" href="https://www.instagram.com/kaneiyad/">Ú</a>
-                        <a id="soc2" href="#">â</a>
+                        <a id="soc2" onclick="popup()" type="button">â</a>
                         <a id="soc3" href="#">Ö</a>
                     </div>
                 </div>
@@ -104,5 +122,17 @@
                 </div>
             </div>
         </div>
+        <div id="popup">
+            <div id="card">
+                <button type="button" onclick="closePopup()" id="close">×</button>
+                <img src="https://cdn.discordapp.com/avatars/242048825567477761/b0a9b8a8167f36743a7b782be2ee7501.png?size=256" class="pfp"/>
+                <div style="margin-left: 20;">
+                    <h1 class="discord">Kaneiya</h1>
+                    <h2 class="discord">#8487</h2>
+                </div>
+                <button type="button" onclick="copyUserId()" id="copy">Copy</button>
+            </div>
+        </div>
+        <div style="display: block;"><input value="Kaneiya#8487" id="userid" type="text"></div>
     </body>
 </html>
