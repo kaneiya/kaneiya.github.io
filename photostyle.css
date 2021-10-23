@@ -60,6 +60,13 @@
     padding: 0 4;
 }
 
+.card {
+    max-width: 1000px;
+}
+.desc-photos {
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1400px) {
     .text {
         font-size: 20;

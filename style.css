@@ -218,6 +218,7 @@ a.button {
     transition: 0.2s ease-out;
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 a.button:hover {
     background-color: #f4c168;

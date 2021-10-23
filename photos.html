@@ -3,6 +3,7 @@
     <head>
         <title>Kaneiya - Photos</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="discordcard.css" />
         <link rel="stylesheet" href="photostyle.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
@@ -30,6 +31,12 @@
                    document.getElementById('navbtn').innerHTML = "Close";
                }
             }
+            function popup() {
+                document.getElementById('popup').style.display = 'flex';
+            }
+            function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+            }
         </script>
     </head>
     <body>
@@ -41,19 +48,31 @@
             <div id="right">
                 <a href="page.html" id="navbar-btn">Home</a>
                 <a href="photos.html" id="navbar-btn-active">Photos</a>
-                <a href="#" id="navbar-btn">Code</a>
+                <a href="code.html" id="navbar-btn">Code</a>
             </div>
         </div>
         <div id="body">
-            <div id="intro" style="justify-content: center;">
+            <div id="intro">
                 <div class="left">
                     <h1 id="name">Photography</h1>
                     <h2 id="line" style="margin-bottom: -10px;">—</h2>
-                    <div class="social">
-                        <h2 id="caption2" style="margin-bottom: 20px;">Here are some of my photographs. You can hover over an image to view details about it, and click on it to view the full sized version or download it.</h2>
+                    <div class="desc-photos">
+                        <h2 id="caption2" class="" style="">Here are some of my photographs. You can hover over an image to view details about it, and click on it to view the full sized version or download it.</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div style="background-color:#242632; margin: 36; padding: 20 20 36 20; border-radius: 16px; box-shadow: 0px 0px 20px rgba(0,0,0,0.5); display: flex; flex-direction: column;">
+                        <h1 id="subtitle2" style="color: white; text-align: center;">Hey!</h1>
+                        <!--<h2 id="line" style="text-align: center;">—</h2>-->
+                        <h2 id="caption2" style="text-align: center; width: auto;">Recently, I have started doing some freelance photography work with my family, friends, and other people in my area. If you are interested, schedule a photoshoot with the button below. (:</h2>
+                        <a id="schedule" class="button" onclick="popup()" type="button" style="width: 120; align-self: center;">SCHEDULE</a>
                     </div>
                 </div>
             </div>
+            <!--<div style="padding-left: 10%; padding-right: 10%; padding-bottom: 0; margin-bottom: -100;">
+                <script type="text/javascript" src="https://stylemygcal.com/widget.js"></script>
+                <div class="smgc-calendar-placeholder" id="smgc-cal-AFb6NcRgmRHdDaSyUm1r"></div>
+            </div>-->
             <div id="grid">
                 <div class="row">
                     <div class="column">
@@ -354,6 +373,15 @@
                         <a href="mailto:me@kaneiya.cf"><h1 id="mailadd" style="font-family: Sen; padding: 15px; font-weight: normal;">me@kaneiya.cf</h1></a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="popup">
+            <div id="card" style="min-width: 500px; width: 70%; height: 70%; justify-content: space-between;">
+                <button type="button" onclick="closePopup()" id="close">×</button>
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/kaneiya/photoshoot?background_color=23272a&text_color=ffffff&primary_color=f4c168" style="min-width:300px; height:auto; width: 100%;vertical-align: middle;margin-left:-60px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget end -->
             </div>
         </div>
     </body>

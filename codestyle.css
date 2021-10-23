@@ -1,0 +1,10 @@
+.projects {
+    background-color: #242632;
+    padding: 0 8% 0 8%;
+    margin: 40 0 0 0;
+}
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

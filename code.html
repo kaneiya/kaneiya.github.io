@@ -1,0 +1,79 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>Kaneiya - Photos</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="photostyle.css" />
+        <link rel="stylesheet" href="codestyle.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <script type="text/javascript">
+            function nav() {
+               if(document.getElementById('navbar').style.width=='200px'){
+                   document.getElementById('navbar').style.visibility = 'hidden';
+                    document.getElementById('navbar').style.width = 0;
+                   document.getElementById('navbtn').style.paddingTop = "40";
+                   document.getElementById('navbtn').style.height = "40";
+                   document.getElementById('navbtn').style.backgroundColor = "transparent";
+                   document.getElementById('navbtn').style.textAlign = "center";
+                   document.getElementById('navbtn').style.paddingLeft = "0";
+                   document.getElementById('navbtn').innerHTML = "Menu";
+               } else {
+                   document.getElementById('navbar').style.visibility = 'visible';
+                    document.getElementById('navbar').style.width = '200px';
+                   document.getElementById('navbtn').style.paddingTop = "50";
+                   document.getElementById('navbtn').style.height = "80";
+                   document.getElementById('navbtn').style.verticalAlign = "bottom";
+                   document.getElementById('navbtn').style.backgroundColor = "#242632";
+                   document.getElementById('navbtn').style.textAlign = "left";
+                   document.getElementById('navbtn').style.paddingLeft = "20";
+                   document.getElementById('navbtn').innerHTML = "Close";
+               }
+            }
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="nav()" id="navbtn">Menu</button>
+        <div id="navbar">
+            <div id="left">
+                <a href="index.html" id="navbar-btn" style="color: #f4c168"><img src="logo.png" id="navimg" /></a>
+            </div>
+            <div id="right">
+                <a href="page.html" id="navbar-btn">Home</a>
+                <a href="photos.html" id="navbar-btn">Photos</a>
+                <a href="code.html" id="navbar-btn-active">Code</a>
+            </div>
+        </div>
+        <div id="body">
+            <div id="intro">
+                <div class="left">
+                    <h1 id="name">Coding Projects</h1>
+                    <h2 id="line" style="margin-bottom: -10px;">—</h2>
+                    <div class="social">
+                        <h2 id="caption2" style="margin-bottom: 20px;">Lorem ipsum dolor sit amet, ludus insolens volutpat ut vis, no assum choro populo vim. Ut nam sale commodo intellegat, cum ea deleniti assueverit. Officiis voluptaria incorrupte ut pro, est no nostrum suscipit elaboraret. Pro epicurei atomorum voluptatibus eu.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="project">
+                    <img src="zone-mockup.PNG" style="width: 500; margin: 0; padding: 0;">
+                    <div style="margin: 0 40 0 40;">
+                        <h1 id="subtitle">Zone</h1>
+                        <h2 id="line" style="margin-bottom: -10px; margin-left: -8;">—</h2>
+                        <h2 id="caption" style="text-align: left;">Lorem ipsum dolor sit amet, ludus insolens volutpat ut vis, no assum choro populo vim. Ut nam sale commodo intellegat, cum ea deleniti assueverit. Officiis voluptaria incorrupte ut pro, est no nostrum suscipit elaboraret. Pro epicurei atomorum voluptatibus eu. Moderatius appellantur eum ut, pro at doming tractatos. Esse etiam sed cu. Magna decore persecuti no nec. Ubique persius no sea, no inimicus cotidieque eos.</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <h1 id="subtitle">Get in Touch</h1>
+                <h2 id="line" style="margin-top: -30; margin-bottom: -40; margin-left: -7;">—</h2>
+                <div id="contact-methods">
+                    <div id="email">
+                        <a href="mailto:me@kaneiya.cf"><h1 id="mailadd" style="font-family: Sen; padding: 15px; font-weight: normal;">me@kaneiya.cf</h1></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
