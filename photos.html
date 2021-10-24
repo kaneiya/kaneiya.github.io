@@ -8,29 +8,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="favicon.png">
+        <script src="global.js"></script>
         <script type="text/javascript">
-            function nav() {
-               if(document.getElementById('navbar').style.width=='200px'){
-                   document.getElementById('navbar').style.visibility = 'hidden';
-                    document.getElementById('navbar').style.width = 0;
-                   document.getElementById('navbtn').style.paddingTop = "40";
-                   document.getElementById('navbtn').style.height = "40";
-                   document.getElementById('navbtn').style.backgroundColor = "transparent";
-                   document.getElementById('navbtn').style.textAlign = "center";
-                   document.getElementById('navbtn').style.paddingLeft = "0";
-                   document.getElementById('navbtn').innerHTML = "Menu";
-               } else {
-                   document.getElementById('navbar').style.visibility = 'visible';
-                    document.getElementById('navbar').style.width = '200px';
-                   document.getElementById('navbtn').style.paddingTop = "50";
-                   document.getElementById('navbtn').style.height = "80";
-                   document.getElementById('navbtn').style.verticalAlign = "bottom";
-                   document.getElementById('navbtn').style.backgroundColor = "#242632";
-                   document.getElementById('navbtn').style.textAlign = "left";
-                   document.getElementById('navbtn').style.paddingLeft = "20";
-                   document.getElementById('navbtn').innerHTML = "Close";
-               }
-            }
             function popup() {
                 document.getElementById('popup').style.display = 'flex';
             }
@@ -376,7 +355,7 @@
             </div>
         </div>
         <div id="popup">
-            <div id="card" style="">
+            <div id="card-schedule" style="">
                 <button type="button" onclick="closePopup()" id="close">×</button>
                 <!-- Calendly inline widget begin -->
                 <div class="calendly-inline-widget" data-url="https://calendly.com/kaneiya/photoshoot?background_color=23272a&text_color=ffffff&primary_color=f4c168" style="min-width:300px; height:98%; width: 100%;vertical-align: middle;margin-left:0px;position:relative; overflow:hidden;overflow-y:hidden;"></div>

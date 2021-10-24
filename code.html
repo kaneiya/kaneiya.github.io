@@ -8,30 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="favicon.png">
-        <script type="text/javascript">
-            function nav() {
-               if(document.getElementById('navbar').style.width=='200px'){
-                   document.getElementById('navbar').style.visibility = 'hidden';
-                    document.getElementById('navbar').style.width = 0;
-                   document.getElementById('navbtn').style.paddingTop = "40";
-                   document.getElementById('navbtn').style.height = "40";
-                   document.getElementById('navbtn').style.backgroundColor = "transparent";
-                   document.getElementById('navbtn').style.textAlign = "center";
-                   document.getElementById('navbtn').style.paddingLeft = "0";
-                   document.getElementById('navbtn').innerHTML = "Menu";
-               } else {
-                   document.getElementById('navbar').style.visibility = 'visible';
-                    document.getElementById('navbar').style.width = '200px';
-                   document.getElementById('navbtn').style.paddingTop = "50";
-                   document.getElementById('navbtn').style.height = "80";
-                   document.getElementById('navbtn').style.verticalAlign = "bottom";
-                   document.getElementById('navbtn').style.backgroundColor = "#242632";
-                   document.getElementById('navbtn').style.textAlign = "left";
-                   document.getElementById('navbtn').style.paddingLeft = "20";
-                   document.getElementById('navbtn').innerHTML = "Close";
-               }
-            }
-        </script>
+        <script src="global.js"></script>
     </head>
     <body>
         <button type="button" onclick="nav()" id="navbtn">Menu</button>

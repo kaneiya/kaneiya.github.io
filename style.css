@@ -314,7 +314,6 @@ a.button:hover {
     }
     #body {
         margin-top: -100vh;
-        margin-top: -webkit-fill-available;
     }
     #right {
         display: flex;
