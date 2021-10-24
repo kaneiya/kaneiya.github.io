@@ -73,8 +73,8 @@ body {
     transition: 0.25s ease-out;
 }
 #navbtn {
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
     font-size: 36px;
     visibility: hidden;
     text-decoration: none;
@@ -314,6 +314,7 @@ a.button:hover {
     }
     #body {
         margin-top: -100vh;
+        margin-top: -webkit-fill-available;
     }
     #right {
         display: flex;
