@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
 }
-:root {
+/*:root {
    --app-height: 100%;
 }
 
@@ -20,7 +20,7 @@ body {
     width: 100vw;
     height: 100vh;
     height: var(--app-height);
-}
+}*/
 #soc1,#soc2,#soc3,#mailadd {
     color: #636573;
     font-family: icons;
@@ -118,6 +118,7 @@ body {
 #body {
     padding: 0;
     margin: 0;
+    position: absolute;
 }
 
 #intro {
@@ -306,10 +307,14 @@ a.button:hover {
     }
     #navbtn {
         width: 200px;
-        height: 40px;
+        height: auto;
         background-color: transparent;
-        padding-top: 45px;
+        padding-top: 40px;
+        text-align: left;
+        padding-left: 40px;
         visibility: visible;
+        cursor: pointer;
+        padding-bottom: 15;
     }
     
     #navbar {
@@ -335,7 +340,7 @@ a.button:hover {
         width: 145;
     }
     #left {
-        margin-bottom: 30;
+        margin-bottom: 0;
         height: 0;
         visibility: hidden;
     }
