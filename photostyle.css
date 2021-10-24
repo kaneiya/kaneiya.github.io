@@ -93,6 +93,12 @@
     .subtext {
         font-size: 14;
     }
+    #card {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        margin: 40 0 0 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -100,12 +106,6 @@
     flex: 99%;
     max-width: 100%;
   }
-    #card {
-        width: 100%;
-        height: 100%;
-        border-radius: 0;
-        margin: 40 0 0 0;
-    }
     .calendly-inline-widget {
         min-width: 100%;
     }
