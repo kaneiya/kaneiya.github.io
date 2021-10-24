@@ -101,6 +101,12 @@
     max-width: 100%;
   }
     #card {
-        min-width: 200px;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        margin: 40 0 0 0;
+    }
+    .calendly-inline-widget {
+        min-width: 100%;
     }
 }
