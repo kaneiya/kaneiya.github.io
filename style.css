@@ -6,7 +6,7 @@
 body {
     background-color: #323439;
     margin: 0;
-    padding: 30 0 0 0;
+    padding: 0 0 0 0;
 }
 /*:root {
    --app-height: 100%;
@@ -292,6 +292,9 @@ a.button:hover {
     }
 }
 @media only screen and (max-width: 1000px) {
+    body {
+        margin-top: 50px;
+    }
     #intro {
         flex-direction: column;
     }
