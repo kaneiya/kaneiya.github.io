@@ -19,14 +19,16 @@
     width: 700;
     border-radius: 16px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    padding-bottom: 60px;
 }
 #close {
     align-self: flex-start;
     font-size: 50;
+    font-family: helvetica, sans-serif;
     background-color: rgba(0,0,0,0);
     color: white;
     border-style: none;

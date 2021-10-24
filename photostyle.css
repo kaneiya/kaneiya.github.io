@@ -66,6 +66,12 @@
 .desc-photos {
     margin-bottom: 20px;
 }
+#card {
+    min-width: 500px;
+    width: 60%;
+    height: 70%;
+    justify-content: space-between;
+}
 
 @media screen and (max-width: 1400px) {
     .text {
@@ -94,4 +100,7 @@
     flex: 99%;
     max-width: 100%;
   }
+    #card {
+        min-width: 200px;
+    }
 }
