@@ -5,6 +5,8 @@
 
 body {
     background-color: #323439;
+    /*background-image: url(images/me-cropped.jpeg);
+    background-size: contain;*/
     margin: 0;
     padding: 0 0 0 0;
 }
@@ -154,6 +156,7 @@ div.right {
     align-items: center;
     width: 47%;
     padding: 10;
+    /*background-image: url(images/me-face.png);*/
 }
 #subtitle {
     font-family: 'Sen', sans-serif;
@@ -176,7 +179,7 @@ div.right {
     font-weight: normal;
     color: #636573;
     text-align: center;
-    margin: 10 0 0 0;
+    margin: 10 0 40 0;
     word-wrap: break-word;
 }
 #caption2 {
