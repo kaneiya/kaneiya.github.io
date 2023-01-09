@@ -3,17 +3,114 @@
     <head>
         <title>Kaneiya</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="discordcard.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="favicon.png">
+        <script src="global.js"></script>
+        <script>
+            function popup() {
+                document.getElementById('popup').style.display = 'flex';
+            }
+            function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+            }
+            
+            function copyUserId() {
+                var copyText = document.getElementById("userid");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999)
+                document.execCommand("copy");
+                document.getElementById("copy").innerHTML = 'Copied!';
+                document.getElementById("copy").style.backgroundColor = '#57F287';
+                setTimeout(function() {document.getElementById("copy").innerHTML = 'Copy'; document.getElementById("copy").style.backgroundColor = '#5865F2';}, 5000);
+            }
+        </script>
     </head>
-    <body style="padding: 20px; display: flex; justify-content: space-around; align-items: center; flex-direction: column;">
-        <div>
-            <h1 id="name" style="text-align: center;">Hello! This page is currently under development.</h1>
+    <body>
+        <button type="button" onclick="nav()" id="navbtn">Menu</button>
+        <div id="navbar">
+            <div id="left">
+                <a href="#" id="navbar-btn" style="color: #f4c168"><img src="logo.png" id="navimg" /></a>
+            </div>
+            <div id="right">
+                <a href="page.html" id="navbar-btn-active">Home</a>
+                <a href="photos.html" id="navbar-btn">Photos</a>
+                <a href="code.html" id="navbar-btn">Projects</a>
+            </div>
         </div>
-        <h2 id="line" style="text-align: center; margin-bottom: -80;">—</h2>
-        <div style="align-items: center; display: flex; padding: 50px; justify-content: center;">
-            <a class="button" href="page.html">VIEW ANYWAY</a>
+        <div id="body">
+            <div id="intro">
+                <div class="left">
+                    <h1 id="name">Hi, I'm Kaneiya!</h1>
+                    <h2 id="line">—</h2>
+                    <div class="social">
+                        <a id="soc1" href="https://www.instagram.com/photosbykaneiya/">Ú</a>
+                        <a id="soc2" onclick="popup()" type="button">â</a>
+                        <a id="soc3" href="#">Ö</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <h1 id="subtitle">About Me</h1>
+                    <h2 id="caption">Hello, and welcome to my website! I am Kaneiya, a high school student in Southern California. I love to swim, code, take photos, cook, decorate cakes, eat food, and try new things. My current career aspiration is to become an ophthalmic biomedical engineer so I can create medical technology that helps treat or diagnose ocular conditions. Thank you for stopping by!</h2>
+                </div>
+            </div>
+            <div id="part2">
+                <div class="section">
+                    <h1 id="subtitle2" >Photography</h1>
+                    <h2 id="caption">My journey in photography started seven years ago, after my parents gave me their old camera to use. Since then, I have continued to take photos with the goal of eliciting emotions and conveying specific feelings. Now, I take all of my photos with a Fujifilm X-T100.</h2>
+                    <a class="button" href="photos.html">SEE MORE</a>
+                </div>
+                <div class="section">
+                    <h1 id="subtitle2" >Coding</h1>
+                    <h2 id="caption">I loved coding from the moment I learned about it in fourth grade. After teaching myself the basics of web development, my 10-year-old fingertips harnessed the ability to create anything. In more recent years, I have grown bored of the imaginary coding problems I learned to solve in school, and have started to utilize my knowledge to help the community around me.</h2>
+                    <a class="button" href="code.html">SEE MORE</a>
+                </div>
+                <div class="section">
+                    <h1 id="subtitle2" >Swimming</h1>
+                    <h2 id="caption">I was seven when I started my first lesson with Fullerton Aquatics Sports Team. On that day, I began my ten-year (and continuing) adventure through the water. I now swim competitively with their Senior group and on my school’s varsity team. You can click below to view my profile on SwimCloud.</h2>
+                    <a class="button" href="https://www.swimcloud.com/swimmer/1756699/">SEE MORE</a>
+                </div>
+            </div>
+            <div id="techspot">
+                <div style="padding: 30px;">
+                    <h1 id="subtitle" style="text-align: center;">Tech Spotlight</h1>
+                </div>
+                <div id="tech">
+                    <div>
+                        <img id="techimg" style="" src="https://cdn.mos.cms.futurecdn.net/gPvyaz76tASn87RCGuSdDc.jpg" />
+                    </div>
+                    <div class="techsec" >
+                        <h1 id="subtitle2" style="text-align: left; margin-bottom: 10px;" >MacBook Air (M1)</h1>
+                        <h2 id="line" style="margin-top: -50; margin-bottom: -20; margin-left: -7;">—</h2>
+                        <h2 id="caption" style="text-align: left;" >With the power of the M1 chip, this laptop is capable of easily handling any tasks the average user may throw at it.</h2>
+                        <h2 id="caption" style="text-align: left;" >Even though the M1 chip is the former generation, it still outperforms most competitors at a fairly reasonable price.</h2>
+                        <h2 id="caption" style="text-align: left; font-style: italic;" >Image from Future.</h2>
+                    <a class="button" href="https://www.apple.com/macbook-air-m1/" style="align-self: center;">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <h1 id="subtitle">Get in Touch</h1>
+                <h2 id="line" style="margin-top: -30; margin-bottom: -40; margin-left: -7;">—</h2>
+                <div id="contact-methods">
+                    <div id="email">
+                        <a href="mailto:me@kaneiya.cf"><h1 id="mailadd" style="font-family: Sen; padding: 15px; font-weight: normal;">me@kaneiya.cf</h1></a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div id="popup">
+            <div id="card">
+                <button type="button" onclick="closePopup()" id="close">×</button>
+                <img src="https://cdn.discordapp.com/avatars/242048825567477761/b0a9b8a8167f36743a7b782be2ee7501.png?size=256" class="pfp"/>
+                <div style="margin-left: 20;">
+                    <h1 class="discord">Kaneiya</h1>
+                    <h2 class="discord">#8487</h2>
+                </div>
+                <button type="button" onclick="copyUserId()" id="copy">Copy</button>
+            </div>
+        </div>
+        <div style="display: block; background-color: #242632;"><input value="Kaneiya#8487" id="userid" type="text" style=""></div>
     </body>
 </html>
